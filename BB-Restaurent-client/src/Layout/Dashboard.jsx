@@ -1,11 +1,13 @@
 import { Link, Outlet } from "react-router-dom";
 import { FaShoppingCart, FaWallet, FaCalendarAlt, FaHome, FaUtensils, FaBook, FaUsers } from 'react-icons/fa';
+import UseAdmin from "../hooks/UseAdmin";
 
 
 
 const Dashboard = () => {
 
-const isAdmin = true;
+// const isAdmin = true;
+const [isAdmin] =UseAdmin();
 
     return (
         <div className="drawer drawer-mobile">
